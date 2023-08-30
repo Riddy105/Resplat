@@ -1,4 +1,3 @@
-import React from "react";
 import { Text } from "@chakra-ui/react";
 import { Tagsprops } from "../../Interfaces/interface";
 const Tags = (props: Tagsprops) => {
@@ -8,8 +7,9 @@ const Tags = (props: Tagsprops) => {
       bgColor="cream.100"
       borderRadius="50px"
       color="black.100"
-      py="20px"
-      px="20px"
+      py="10px"
+      px={["10px", null, "20px"]}
+      fontWeight="bold"
     >
       {title}
     </Text>

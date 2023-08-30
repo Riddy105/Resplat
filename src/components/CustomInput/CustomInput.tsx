@@ -10,7 +10,9 @@ const CustomInput = (props: InputProps) => {
       </Text>
       <Input
         type={type ?? "number"}
-        h="34px"
+        h="40px"
+        bgColor="white.100"
+        borderRadius="2px"
         sx={{
           ":focus": {
             border: "1px solid #FF8062",
@@ -23,3 +25,5 @@ const CustomInput = (props: InputProps) => {
 };
 
 export default CustomInput;
+
+// Didn't bother to get rid of the border color chakra gave us out of the box cos it seems to help distinguish the inputs on the background, removing it will lead to poor visibility.

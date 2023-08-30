@@ -5,3 +5,9 @@ export interface InputProps {
 export interface Tagsprops {
   title: string;
 }
+
+export interface ProgressButtonsProps {
+  totalTabs: number;
+  currentTab: number;
+  goToNext: () => void;
+}

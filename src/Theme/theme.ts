@@ -21,6 +21,9 @@ const theme = extendTheme({
     gray: {
       100: "#52575F",
     },
+    blue: {
+      100: "#0258FF",
+    },
   },
 });
 
