@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import { Box, Image, Grid, GridItem, Flex, Text } from "@chakra-ui/react";
+import { Box, Image, Grid, Flex, Text } from "@chakra-ui/react";
 import { ResplatLogo } from "../../assets";
 import SURVEY_DATA from "../../SurveyData/SurveyData";
 import { CustomInput, ProgressButtons, Tags } from "../../components";
