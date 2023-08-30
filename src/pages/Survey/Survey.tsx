@@ -35,6 +35,8 @@ const SurveyBox = () => {
   const totalTabs = Object.values(SURVEY_DATA).length;
   const surveyIndex = currentTab - 1; // If currentTab = 1, then the index = 0. So that tab 1 gets its correct data from the object. Data for Tab 1 will reside in index 0 of the array, hence {currentTab -1}
 
+  const currentCriteria =
+    Object.keys(SURVEY_DATA)[surveyIndex < 0 ? 0 : surveyIndex];
   const CURRENT_SURVEY =
     Object.values(SURVEY_DATA)[surveyIndex < 0 ? 0 : surveyIndex]; // Initially on page load, currentTab will be null, that will make surveyIndex = -1 hence an invalid value to provide to an array.
   const { requirements: REQUIREMENTS, inputs: INPUTS } = CURRENT_SURVEY;
@@ -62,7 +64,7 @@ const SurveyBox = () => {
         fontSize="18px"
         textTransform="uppercase"
       >
-        Criteria one
+        {`Criteria ${currentCriteria}`}
       </Text>
       <Box as="section" py="27px" px="28px" bgColor="white.200">
         <Flex alignItems="center">
