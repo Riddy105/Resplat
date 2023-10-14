@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Box, Image, Grid, Flex, Text } from "@chakra-ui/react";
 import { ResplatLogo } from "../../assets";
-import SURVEY_DATA from "../../SurveyData/SurveyData";
+import SURVEY_DATA from "../../utils/SurveyData";
 import { CustomInput, ProgressButtons, Tags } from "../../components";
 const Survey = () => {
   const [searchParams, setSearchParams] = useSearchParams();
